@@ -1,0 +1,1 @@
+"use strict";var startBtn=document.querySelector(".start_btn");startBtn.style.top="400px",startBtn.style.opacity=1;
