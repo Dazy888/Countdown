@@ -1,3 +1,4 @@
+// Main Styles
 * {
   padding: 0;
   margin: 0;
@@ -10,19 +11,22 @@
   }
 }
 
-#wrapper {
-  width: 1920px;
-  height: 940px;
+.flex_property_set {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#wrapper {
+  width: 1920px;
+  height: 940px;
   position: relative;
 
   background: #FFFF00;
   margin: auto;
 }
 
-// Turn back button
+// Turn Back Btn
 .back_btn {
   display: none;
   position: absolute;
@@ -38,9 +42,8 @@
   }
 }
 
-//Show form button
+// Start Btn
 .start_btn {
-  display: none;
   width: 500px;
   height: 100px;
   position: absolute;
@@ -59,7 +62,7 @@
   }
 }
 
-// Form choose date
+// Choose Date
 form {
   display: none;
   text-align: center;
@@ -109,12 +112,11 @@ form {
   }
 }
 
-// Timer block
+// Live Time
 .timer {
-  //display: none;
+  display: none;
   width: 950px;
   height: 300px;
-
   font-family: 'Dosis';
 
   span {
@@ -123,7 +125,7 @@ form {
     font-size: 80px;
   }
 
-  .timer_title {
+  .timer__title {
     font-size: 60px;
     text-align: center;
     word-spacing: 10px;
@@ -132,10 +134,6 @@ form {
   }
 
   .time_row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .container {
       p {
         font-size: 40px;
@@ -150,9 +148,6 @@ form {
       .circle {
         width: 180px;
         height: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         border-radius: 50%;
         border: 5px solid #4B0082;
