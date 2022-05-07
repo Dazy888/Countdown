@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Countdown</title>
-<!--    FontAwesome-->
-    <link rel="stylesheet" href="../Iconic-Font/css/all.min.css">
-<!--    CSS-->
+    <!--    CSS-->
     <link rel="stylesheet" href="../Styles-CSS/Countdown.css">
+    <!--    FontAwesome-->
+    <link rel="stylesheet" href="../Iconic-Font/css/all.min.css">
     <!--    Link all fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +19,19 @@
             <i class="fa-solid fa-circle-arrow-left"></i>
         </button>
         <!--        Show form button-->
-        <button class="start_btn">
-            Start
-        </button>
+        <button class="start_btn">Choose Date</button>
         <!--        Form choose date-->
-        <form>
+        <form class="choose_date">
             <label>Choose your birthday date :</label> <br>
             <input type="date" name="date" class="date_inp"> <br>
-            <input type="submit" class="sub_inp" value="Send">
+            <input type="submit" class="sub_inp" value="Start Timer">
         </form>
 
         <!--      Timer block  -->
         <div class="timer">
             <h2 class="timer__title">COUNTDOWN TO MY BIRTHDAY</h2>
             <!--            Live time-->
-            <div class="timer__row flex_property_set">
+            <div class="timer__row">
                 <div class="container">
                     <span class="circle flex_property_set">
                         <span class="d num"></span>

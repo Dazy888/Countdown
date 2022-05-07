@@ -63,9 +63,11 @@
 }
 
 // Choose Date
-form {
+.choose_date {
   display: none;
+  opacity: 0;
   text-align: center;
+  transition: opacity 3s;
 
   label {
     font-size: 80px;
@@ -95,7 +97,7 @@ form {
   }
 
   .sub_inp {
-    width: 300px;
+    width: 180px;
     height: 50px;
 
     margin-top: 50px;
@@ -104,7 +106,8 @@ form {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
-    font-size: 30px;
+    font-size: 25px;
+    letter-spacing: 1px;
 
     &:hover {
       transform: translateY(-30px);
@@ -133,7 +136,9 @@ form {
     margin-bottom: 30px;
   }
 
-  .time_row {
+  .timer__row {
+    display: flex;
+    justify-content: space-between;
     .container {
       p {
         font-size: 40px;
