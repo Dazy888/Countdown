@@ -1,8 +1,15 @@
 // Main Styles
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: 'Bebas Neue';
+}
+
+body {
+  max-width: 1920px;
+  height: 100%;
+  margin: auto;
+  padding: 0;
 
   button {
     background: transparent;
@@ -18,16 +25,16 @@
 }
 
 #wrapper {
-  width: 1920px;
-  height: 940px;
+  width: 100%;
+  min-height: 100vh;
   position: relative;
 
   background: #FFFF00;
-  margin: auto;
 }
 
 // Turn Back Btn
 .back_btn {
+  height: 60px;
   display: none;
   position: absolute;
   right: 20px;
@@ -38,7 +45,7 @@
   font-size: 50px;
 
   &:hover {
-    transform: translateX(-30px) rotate(360deg);
+    transform: translateX(-30px);
   }
 }
 
@@ -64,6 +71,7 @@
 
 // Choose Date
 .choose_date {
+  height: 300px;
   display: none;
   opacity: 0;
   text-align: center;
@@ -119,7 +127,7 @@
 .timer {
   display: none;
   width: 950px;
-  height: 300px;
+  height: 450px;
   font-family: 'Dosis';
 
   span {
@@ -129,16 +137,18 @@
   }
 
   .timer__title {
+    height: fit-content;
     font-size: 60px;
     text-align: center;
-    word-spacing: 10px;
     letter-spacing: 3px;
     margin-bottom: 30px;
   }
 
   .timer__row {
+    height: fit-content;
     display: flex;
     justify-content: space-between;
+
     .container {
       p {
         font-size: 40px;
@@ -148,6 +158,7 @@
 
       .num {
         color: black;
+        height: fit-content;
       }
 
       .circle {
@@ -158,6 +169,94 @@
         border: 5px solid #4B0082;
         background: transparent;
       }
+    }
+  }
+}
+
+// Responsive Layout
+@media screen and (max-width: 800px) {
+  .timer {
+    height: fit-content;
+    margin-top: 200px;
+  }
+
+  .timer__row {
+    flex-direction: column;
+
+    .container {
+      margin: auto;
+    }
+  }
+
+  .circle {
+    width: 150px !important;
+    height: 150px !important;
+    font-size: 20px;
+  }
+
+  .choose_date {
+    label {
+      font-size: 60px;
+    }
+  }
+
+  .start_btn {
+    width: 300px;
+    height: 60px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .timer__title {
+    font-size: 50px !important;
+  }
+
+  .circle {
+    width: 130px !important;
+    height: 130px !important;
+
+    span {
+      font-size: 70px;
+    }
+  }
+
+  .choose_date {
+    label {
+      font-size: 40px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .timer__title {
+    font-size: 35px !important;
+  }
+
+
+  .circle {
+    width: 110px !important;
+    height: 110px !important;
+
+    span {
+      font-size: 60px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .timer__title {
+    font-size: 30px !important;
+  }
+
+  .circle {
+    width: 90px !important;
+    height: 90px !important;
+
+    span {
+      font-size: 50px;
     }
   }
 }

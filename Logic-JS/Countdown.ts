@@ -1,37 +1,45 @@
-// Get All Elements
+// Geting All Elements
+
+// Buttons (Start and Back)
 const startBtn: any = document.querySelector('.start_btn')
-
-const chooseDate: any = document.querySelector('.choose_date')
-const dateInp: any = document.querySelector('.date_inp')
-
 const backBtn: any = document.querySelector('.back_btn')
 
-const timer: any = document.querySelector('.timer')
+// Choose Date Elements
+const chooseDateBl: any = document.querySelector('.choose_date')
+const dateInp: any = document.querySelector('.date_inp')
+
+// Timer Block Elements
+const timerBl: any = document.querySelector('.timer')
 const days: any = document.querySelector('.d');
 const hours: any = document.querySelector('.h');
 const minutes: any = document.querySelector('.m');
 const seconds: any = document.querySelector('.s');
 
-// Start Btn Code
-startBtn.style.top = 400 + 'px'
-startBtn.style.opacity = 1;
+// Event Listeners
+
+// Window
+function windowLoadAnimation() {
+    startBtn.style.top = document.documentElement.clientHeight / 2 - startBtn.clientHeight + 'px'
+    startBtn.style.opacity = 1;
+}
+
+// Show Choose Date Btn
 function showChooseDate() {
     startBtn.style.display = 'none'
-    chooseDate.style.display = 'block'
-    chooseDate.style.opacity = '1'
+    chooseDateBl.style.display = 'block'
+    chooseDateBl.style.opacity = '1'
     backBtn.style.display = 'block'
 }
-startBtn.addEventListener('click', showChooseDate)
 
-// Choose Date Code
-function showTimer(e) {
+// Start Timer Btn
+function startTimer(e) {
     e.preventDefault()
 
     if (dateInp.value === '') {
         alert('Insert the date again')
     } else {
-        chooseDate.style.display = 'none'
-        timer.style.display = 'block'
+        chooseDateBl.style.display = 'none'
+        timerBl.style.display = 'block'
 
         let birthday: any = new Date(dateInp.value);
         function startTimer() {
@@ -56,17 +64,27 @@ function showTimer(e) {
         }, 1000);
     }
 }
-chooseDate.addEventListener('submit', showTimer)
 
-// Back Btn Code
+// Back Btn
 function turnBack() {
-    if (chooseDate.style.display === 'block') {
+    if (chooseDateBl.style.display === 'block') {
         startBtn.style.display = 'block'
-        chooseDate.style.display = 'none'
+        chooseDateBl.style.display = 'none'
         backBtn.style.display = 'none'
     } else {
-        chooseDate.style.display = 'block'
-        timer.style.display = 'none'
+        chooseDateBl.style.display = 'block'
+        timerBl.style.display = 'none'
     }
 }
-backBtn.addEventListener('click', turnBack)
+
+// Setting Event Listeners
+
+// Submit
+chooseDateBl.onsubmit = startTimer
+
+// Load
+window.onload = windowLoadAnimation
+
+// Click
+startBtn.onclick = showChooseDate
+backBtn.onclick = turnBack
