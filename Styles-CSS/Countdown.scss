@@ -29,7 +29,7 @@ body {
   min-height: 100vh;
   position: relative;
 
-  background: #FFFF00;
+  background: #E8D460;
 }
 
 // Turn Back Btn
@@ -65,7 +65,7 @@ body {
 
   &:hover {
     transform: translateY(-50px);
-    box-shadow: 0 0 50px 20px rgb(133, 2, 214);
+    box-shadow: 0 20px 20px 0 #E18B5D;
   }
 }
 
@@ -95,7 +95,6 @@ body {
     font-size: 20px;
 
     &:focus {
-      transform: translateY(-30px);
       border: 5px solid lightblue !important;
     }
 
@@ -175,6 +174,13 @@ body {
 
 // Responsive Layout
 @media screen and (max-width: 800px) {
+  button {
+    &:hover {
+      transform: translate(0) !important;
+      box-shadow: 0 0 !important;
+    }
+  }
+
   .timer {
     height: fit-content;
     margin-top: 200px;
