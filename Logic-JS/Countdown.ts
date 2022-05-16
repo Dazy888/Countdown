@@ -1,10 +1,10 @@
 // Getting All Elements
-// Buttons (Start and Back)
+// Buttons (Start Choosing Date and Turn Back)
 const dateChoosingBtn: any = document.querySelector('.date_choosing_btn')
-const backBtn: any = document.querySelector('.back_btn')
+const turnBackBtn: any = document.querySelector('.turn_back_btn')
 
 // Elements Of Choosing Date Block
-const choosingDateBl: any = document.querySelector('.choose-date')
+const choosingDateBl: any = document.querySelector('.date-choosing')
 const dateInp: any = document.querySelector('.date_inp')
 
 // Timer Block Elements
@@ -16,28 +16,32 @@ const seconds: any = document.querySelector('.s')
 
 
 // Event Listeners
-// Window
-function windowLoadAnimation() {
+// Window Load Animation
+function animation() {
     dateChoosingBtn.style.top = document.documentElement.clientHeight / 2 - dateChoosingBtn.clientHeight + 'px'
     dateChoosingBtn.style.opacity = 1;
 }
+window.onload = animation
 
-// Show Choose Date Btn
-function showChooseDate() {
+// Start Date Choosing Button
+function startDateChoosing() {
     dateChoosingBtn.style.display = 'none'
     choosingDateBl.style.display = 'block'
     choosingDateBl.style.opacity = '1'
-    backBtn.style.display = 'block'
+    turnBackBtn.style.display = 'block'
 }
+dateChoosingBtn.onclick = startDateChoosing
 
-// Start Timer Btn
+// Start Timer Button
 function startTimer(e) {
     e.preventDefault()
+    const birthday: any = new Date(dateInp.value)
+
     if (dateInp.value === '') alert('Insert the date again')
 
     choosingDateBl.style.display = 'none'
     timerBl.style.display = 'block'
-    const birthday: any = new Date(dateInp.value)
+
     function startTimer() {
         const date: any = new Date()
         let ms: number
@@ -54,21 +58,17 @@ function startTimer(e) {
 
     setInterval(() => { startTimer() }, 1000)
 }
+choosingDateBl.onsubmit = startTimer
 
-// Back Btn
+// Turn Back Button
 function turnBack() {
     if (choosingDateBl.style.display === 'block') {
         dateChoosingBtn.style.display = 'block'
         choosingDateBl.style.display = 'none'
-        backBtn.style.display = 'none'
+        turnBackBtn.style.display = 'none'
     } else {
         choosingDateBl.style.display = 'block'
         timerBl.style.display = 'none'
     }
 }
-
-// Setting Event Listeners
-choosingDateBl.onsubmit = startTimer
-window.onload = windowLoadAnimation
-dateChoosingBtn.onclick = showChooseDate
-backBtn.onclick = turnBack
+turnBackBtn.onclick = turnBack
