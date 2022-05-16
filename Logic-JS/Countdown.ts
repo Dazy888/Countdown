@@ -1,6 +1,6 @@
 // Getting All Elements
 // Buttons (Start and Back)
-const startBtn: any = document.querySelector('.start_btn')
+const dateChoosingBtn: any = document.querySelector('.date_choosing_btn')
 const backBtn: any = document.querySelector('.back_btn')
 
 // Elements Of Choosing Date Block
@@ -18,13 +18,13 @@ const seconds: any = document.querySelector('.s')
 // Event Listeners
 // Window
 function windowLoadAnimation() {
-    startBtn.style.top = document.documentElement.clientHeight / 2 - startBtn.clientHeight + 'px'
-    startBtn.style.opacity = 1;
+    dateChoosingBtn.style.top = document.documentElement.clientHeight / 2 - dateChoosingBtn.clientHeight + 'px'
+    dateChoosingBtn.style.opacity = 1;
 }
 
 // Show Choose Date Btn
 function showChooseDate() {
-    startBtn.style.display = 'none'
+    dateChoosingBtn.style.display = 'none'
     choosingDateBl.style.display = 'block'
     choosingDateBl.style.opacity = '1'
     backBtn.style.display = 'block'
@@ -58,7 +58,7 @@ function startTimer(e) {
 // Back Btn
 function turnBack() {
     if (choosingDateBl.style.display === 'block') {
-        startBtn.style.display = 'block'
+        dateChoosingBtn.style.display = 'block'
         choosingDateBl.style.display = 'none'
         backBtn.style.display = 'none'
     } else {
@@ -70,5 +70,5 @@ function turnBack() {
 // Setting Event Listeners
 choosingDateBl.onsubmit = startTimer
 window.onload = windowLoadAnimation
-startBtn.onclick = showChooseDate
+dateChoosingBtn.onclick = showChooseDate
 backBtn.onclick = turnBack
