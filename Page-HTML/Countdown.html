@@ -11,53 +11,52 @@
     <!--    Link all fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Bebas+Neue&family=Dosis:wght@500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Bebas+Neue&family=Dosis:wght@500;600;700;800&family=Quicksand:wght@500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper" class="flex_property_set">
-        <!--        Back Btn-->
-        <button class="back_btn">
-            <i class="fa-solid fa-circle-arrow-left"></i>
-        </button>
-        <!--        Start Choosing Date Btn-->
-        <button class="start_btn">Choose Date</button>
-        <!--        Choose date-->
-        <form class="choose_date">
-            <label>Choose your birthday date</label> <br>
-            <input type="date" name="date" class="date_inp"> <br>
-            <input type="submit" class="sub_inp" value="Start Timer">
-        </form>
-        <!--      Timer  -->
-        <div class="timer">
-            <h2 class="timer__title">COUNTDOWN TO MY BIRTHDAY</h2>
-            <div class="timer__row">
-                <div class="container">
-                    <span class="circle flex_property_set">
-                        <span class="d num"></span>
+<div id="wrapper" class="flex_property_set">
+    <!--        Back Button-->
+    <button class="back_btn"><i class="fa-solid fa-circle-arrow-left"></i></button>
+    <!--        Date Choosing Button-->
+    <button class="date_choosing_btn">Choose Date</button>
+    <!--        Date Choosing-->
+    <form class="choose-date">
+        <p class="choose-date__title">Choose your birthday date</p>
+        <input type="date" class="date_inp"> <br>
+        <input type="submit" class="sub_inp" value="Start Timer">
+    </form>
+    <!--      Timer-->
+    <div class="timer">
+        <h2 class="timer__title">COUNTDOWN TO MY BIRTHDAY</h2>
+        <div class="timer__row">
+            <div class="timer__container">
+                    <span class="timer__circle flex_property_set">
+                        <span class="d timer__num"></span>
                     </span>
-                    <p>DAYS</p>
-                </div>
-                <div class="container">
-                    <span class="circle flex_property_set">
-                        <span class="h num"></span>
+                <p class="timer__text">DAYS</p>
+            </div>
+            <div class="timer__container">
+                    <span class="timer__circle flex_property_set">
+                        <span class="h timer__num"></span>
                     </span>
-                    <p>HOURS</p>
-                </div>
-                <div class="container">
-                    <span class="circle flex_property_set">
-                        <span class="m num"></span>
+                <p class="timer__text">HOURS</p>
+            </div>
+            <div class="timer__container">
+                    <span class="timer__circle flex_property_set">
+                        <span class="m timer__num"></span>
                     </span>
-                    <p>MINUTES</p>
-                </div>
-                <div class="container">
-                    <span class="circle flex_property_set">
-                        <span class="s num"></span>
+                <p class="timer__text">MINUTES</p>
+            </div>
+            <div class="timer__container">
+                    <span class="timer__circle flex_property_set">
+                        <span class="s timer__num"></span>
                     </span>
-                    <p>SECONDS</p>
-                </div>
+                <p class="timer__text">SECONDS</p>
             </div>
         </div>
     </div>
-    <script src="../Logic-JS/Countdown.js"></script>
+</div>
+<script src="../Logic-JS/Countdown.js"></script>
 </body>
 </html>
