@@ -44,7 +44,7 @@ function startTimer(e) {
     const birthday: any = new Date(dateInp.value)
     function startTimer() {
         const date: any = new Date()
-        let ms: any
+        let ms: any = 0
 
         // console.log(birthday, date)
 
