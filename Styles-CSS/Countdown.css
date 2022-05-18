@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue sans-serif";
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -63,6 +63,7 @@ body button {
   transition: top 2s, opacity 2s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
   transition: transform 0.5s, box-shadow 0.5s, top 2s, opacity 2s;
   transition: transform 0.5s, box-shadow 0.5s, top 2s, opacity 2s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  color: black !important;
   letter-spacing: 3px;
   font-size: 55px;
 }
