@@ -114,7 +114,6 @@ body {
 
     color: black !important;
     font-size: 25px;
-    letter-spacing: 1px;
 
     &:hover {
       transform: translateY(-30px);
@@ -274,11 +273,15 @@ body {
       font-size: 50px;
     }
   }
+
+  .timer__text {
+    font-size: 35px !important;
+  }
 }
 
 @media screen and (max-width: 355px) {
   .timer {
-    margin-top: 100px !important;
+    margin-top: 120px !important;
   }
 
   .timer__title {
@@ -287,11 +290,30 @@ body {
 
   .date-choosing {
     .date-choosing__title {
-      font-size: 35px !important;
+      font-size: 30px !important;
     }
 
     .date-choosing__inp {
-      width: 250px !important;
+      width: 220px !important;
     }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .timer__title {
+    font-size: 20px !important;
+  }
+
+  .timer__circle {
+    width: 70px !important;
+    height: 70px !important;
+
+    .timer__num {
+      font-size: 40px;
+    }
+  }
+
+  .timer__text {
+    font-size: 30px !important;
   }
 }
