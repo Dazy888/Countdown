@@ -1,18 +1,18 @@
 // Getting All Elements
 // Buttons (Start Choosing Date and Turn Back)
-const dateChoosingBtn: any = document.querySelector('.date_choosing_btn')
-const turnBackBtn: any = document.querySelector('.turn_back_btn')
+const dateChoosingBtn = document.querySelector('.date_choosing_btn')
+const turnBackBtn = document.querySelector('.turn_back_btn')
 
 // Elements Of Choosing Date Block
-const choosingDateBl: any = document.querySelector('.date-choosing')
-const dateInp: any = document.querySelector('.date_inp')
+const choosingDateBl = document.querySelector('.date-choosing')
+const dateInp = document.querySelector('.date_inp')
 
 // Timer Block Elements
-const timerBl: any = document.querySelector('.timer')
-const days: any = document.querySelector('.d')
-const hours: any = document.querySelector('.h')
-const minutes: any = document.querySelector('.m')
-const seconds: any = document.querySelector('.s')
+const timerBl = document.querySelector('.timer')
+const days = document.querySelector('.d')
+const hours = document.querySelector('.h')
+const minutes = document.querySelector('.m')
+const seconds = document.querySelector('.s')
 
 
 // Event Listeners
@@ -41,10 +41,10 @@ function startTimer(e) {
     choosingDateBl.style.display = 'none'
     timerBl.style.display = 'block'
 
-    const birthday: any = new Date(dateInp.value)
+    const birthday = new Date(dateInp.value)
     function startTimer() {
-        const date: any = new Date()
-        let ms: any
+        let date = new Date()
+        let ms = 0
 
         // console.log(birthday, date)
 
