@@ -5,7 +5,7 @@ const turnBackBtn: any = document.querySelector('.turn_back_btn')
 
 // Elements Of Choosing Date Block
 const choosingDateBl: any = document.querySelector('.date-choosing')
-const dateInp: any = document.querySelector('.date_inp')
+const dateInp: any = document.querySelector('.date-choosing__inp')
 
 // Timer Block Elements
 const timerBl: any = document.querySelector('.timer')

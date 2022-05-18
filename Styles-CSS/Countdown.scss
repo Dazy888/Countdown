@@ -59,7 +59,6 @@ body {
   border-radius: 20px;
   transition: transform 0.5s, box-shadow 0.5s, top 2s, opacity 2s;
 
-  color: black !important;
   letter-spacing: 3px;
   font-size: 55px;
 
@@ -82,7 +81,7 @@ body {
     color: black;
   }
 
-  .date_inp {
+  .date-choosing__inp {
     width: 300px;
     height: 50px;
     border: none;
@@ -103,7 +102,7 @@ body {
     }
   }
 
-  .sub_inp {
+  .date-choosing__sub {
     width: 180px;
     height: 50px;
     margin-top: 50px;
@@ -113,6 +112,7 @@ body {
     cursor: pointer;
     transition: 0.5s;
 
+    color: black !important;
     font-size: 25px;
     letter-spacing: 1px;
 
@@ -192,13 +192,17 @@ body {
 
     .timer__container {
       margin: auto;
+      margin-bottom: 20px !important;
+
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
     }
   }
 
   .timer__circle {
     width: 150px !important;
     height: 150px !important;
-
     font-size: 20px;
   }
 
@@ -211,7 +215,6 @@ body {
   .date_choosing_btn {
     width: 300px;
     height: 60px;
-
     font-size: 35px;
   }
 }
@@ -235,10 +238,13 @@ body {
       font-size: 40px !important;
     }
   }
-
 }
 
 @media screen and (max-width: 520px) {
+  .timer {
+    margin-top: 150px !important;
+  }
+
   .timer__title {
     font-size: 35px !important;
   }
@@ -266,6 +272,26 @@ body {
 
     .timer__num {
       font-size: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .timer {
+    margin-top: 100px !important;
+  }
+
+  .timer__title {
+    font-size: 25px !important;
+  }
+
+  .date-choosing {
+    .date-choosing__title {
+      font-size: 35px !important;
+    }
+
+    .date-choosing__inp {
+      width: 250px !important;
     }
   }
 }
