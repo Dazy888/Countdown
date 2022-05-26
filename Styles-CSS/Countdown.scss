@@ -1,21 +1,11 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@400;500;600;700&display=swap');
+
 // Main Styles
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-body {
-  max-width: 1920px;
-  height: 100%;
-  margin: auto;
-  padding: 0;
-
-  button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .flex_property_set {
@@ -25,10 +15,10 @@ body {
 }
 
 #wrapper {
-  width: 100%;
   min-height: 100vh;
   position: relative;
   background: #E8D460;
+  font-family: 'Bebas Neue', cursive;
 }
 
 // Turn Back Button
@@ -59,9 +49,10 @@ body {
   border-radius: 20px;
   transition: transform 0.5s, box-shadow 0.5s, top 2s, opacity 2s;
 
-  color: black !important;
+  color: black;
   letter-spacing: 3px;
   font-size: 55px;
+  font-family: 'Bebas Neue', cursive;
 
   &:hover {
     transform: translateY(-50px);
@@ -113,7 +104,8 @@ body {
     cursor: pointer;
     transition: 0.5s;
 
-    color: black !important;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
     font-size: 25px;
 
     &:hover {
@@ -127,7 +119,6 @@ body {
   display: none;
   width: 950px;
   height: 450px;
-  font-family: 'Dosis';
 
   span {
     display: flex;
@@ -240,7 +231,7 @@ body {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
   .timer {
     margin-top: 150px !important;
   }
@@ -261,7 +252,7 @@ body {
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 405px) {
   .timer__title {
     font-size: 30px !important;
   }
@@ -300,7 +291,7 @@ body {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 315px) {
   .timer__title {
     font-size: 20px !important;
   }

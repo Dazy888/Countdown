@@ -21,6 +21,7 @@ function animation() {
     dateChoosingBtn.style.top = document.documentElement.clientHeight / 2 - dateChoosingBtn.clientHeight + 'px'
     dateChoosingBtn.style.opacity = 1;
 }
+
 window.onload = animation
 
 // Start Date Choosing Button
@@ -30,6 +31,7 @@ function startDateChoosing() {
     choosingDateBl.style.opacity = '1'
     turnBackBtn.style.display = 'block'
 }
+
 dateChoosingBtn.onclick = startDateChoosing
 
 // Start Timer Button
@@ -42,27 +44,26 @@ function startTimer(e) {
     timerBl.style.display = 'block'
 
     const birthday: any = new Date(dateInp.value)
+
     function startTimer() {
         const date: any = new Date()
-        let ms: any = 0
+        let ms: number = 0
 
-        // console.log(birthday, date)
-
-        if (birthday > date) {
-            ms = birthday - date
-        } else {
-            ms = 31536000000 - Date.parse(date) + Date.parse(birthday)
-        }
+        birthday > date ? ms = birthday - date : ms = 31536000000 - Date.parse(date) + Date.parse(birthday)
 
         days.innerText = Math.round(ms / 86400000)
         hours.innerText = 24 - date.getHours()
         minutes.innerText = 60 - date.getMinutes()
         seconds.innerText = 60 - date.getSeconds()
     }
+
     startTimer()
 
-    setInterval(() => { startTimer() }, 1000)
+    setInterval(() => {
+        startTimer()
+    }, 1000)
 }
+
 choosingDateBl.onsubmit = startTimer
 
 // Turn Back Button
@@ -76,4 +77,5 @@ function turnBack() {
         timerBl.style.display = 'none'
     }
 }
+
 turnBackBtn.onclick = turnBack
