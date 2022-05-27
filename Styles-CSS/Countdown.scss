@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 // Main Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   background: transparent;
   border: none;
@@ -159,153 +164,5 @@ button {
         text-align: center;
       }
     }
-  }
-}
-
-// Responsive Layout
-@media screen and (max-width: 1200px) {
-  button {
-    &:hover {
-      transform: translate(0) !important;
-      box-shadow: 0 0 !important;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .timer {
-    height: fit-content;
-    margin-top: 200px;
-
-    .timer__row {
-      flex-direction: column;
-    }
-
-    .timer__container {
-      margin: auto;
-      margin-bottom: 20px !important;
-
-      &:last-child {
-        margin-bottom: 0 !important;
-      }
-    }
-  }
-
-  .timer__circle {
-    width: 150px !important;
-    height: 150px !important;
-    font-size: 20px;
-  }
-
-  .date-choosing {
-    .date-choosing__title {
-      font-size: 60px !important;
-    }
-  }
-
-  .date_choosing_btn {
-    width: 300px;
-    height: 60px;
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .timer__title {
-    font-size: 50px !important;
-  }
-
-  .timer__circle {
-    width: 130px !important;
-    height: 130px !important;
-
-    .timer__num {
-      font-size: 70px;
-    }
-  }
-
-  .date-choosing {
-    .date-choosing__title {
-      font-size: 40px !important;
-    }
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .timer {
-    margin-top: 150px !important;
-  }
-
-  .timer__title {
-    font-size: 35px !important;
-  }
-
-
-  .timer__circle {
-    width: 110px !important;
-    height: 110px !important;
-
-    .timer__num {
-      font-size: 60px;
-    }
-  }
-}
-
-
-@media screen and (max-width: 405px) {
-  .timer__title {
-    font-size: 30px !important;
-  }
-
-  .timer__circle {
-    width: 90px !important;
-    height: 90px !important;
-
-    .timer__num {
-      font-size: 50px;
-    }
-  }
-
-  .timer__text {
-    font-size: 35px !important;
-  }
-}
-
-@media screen and (max-width: 355px) {
-  .timer {
-    margin-top: 120px !important;
-  }
-
-  .timer__title {
-    font-size: 25px !important;
-  }
-
-  .date-choosing {
-    .date-choosing__title {
-      font-size: 30px !important;
-    }
-
-    .date-choosing__inp {
-      width: 220px !important;
-    }
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .timer__title {
-    font-size: 20px !important;
-  }
-
-  .timer__circle {
-    width: 70px !important;
-    height: 70px !important;
-
-    .timer__num {
-      font-size: 40px;
-    }
-  }
-
-  .timer__text {
-    font-size: 30px !important;
   }
 }
