@@ -125,22 +125,3 @@
     }
   }
 }
-
-@media screen and (max-width: 315px) {
-  .timer__title {
-    font-size: 20px !important;
-  }
-
-  .timer__circle {
-    width: 70px !important;
-    height: 70px !important;
-
-    .timer__num {
-      font-size: 40px;
-    }
-  }
-
-  .timer__text {
-    font-size: 30px !important;
-  }
-}
