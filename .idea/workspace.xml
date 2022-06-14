@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ff4c0f3-22d6-4b68-a7f4-9ac009ebfd1c" name="Changes" comment="" />
+    <list default="true" id="4ff4c0f3-22d6-4b68-a7f4-9ac009ebfd1c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic-JS/Countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/Logic-JS/Countdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic-JS/Countdown.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Logic-JS/Countdown.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles-CSS/Countdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles-CSS/Countdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles-CSS/Countdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Styles-CSS/Countdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles-CSS/Media.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles-CSS/Media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles-CSS/Media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Styles-CSS/Media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\Programs\\WebStorm 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -35,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655215848637</updated>
-      <workItem from="1655215850243" duration="677000" />
+      <workItem from="1655215850243" duration="2258000" />
     </task>
     <servers />
   </component>

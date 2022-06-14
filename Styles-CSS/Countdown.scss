@@ -27,7 +27,7 @@ button {
 }
 
 // Turn Back Button
-.turn_back_btn {
+.turn-back {
   height: 60px;
   display: none;
   position: absolute;
@@ -44,7 +44,7 @@ button {
 }
 
 // Start Date Choosing Button
-.date_choosing_btn {
+.date-choosing-btn {
   width: 500px;
   height: 100px;
   position: absolute;
@@ -78,7 +78,7 @@ button {
     color: black;
   }
 
-  .date-choosing__inp {
+  .date-choosing__input {
     width: 300px;
     height: 50px;
     border: none;
@@ -87,7 +87,6 @@ button {
     padding-left: 10px;
     transition: transform 0.5s;
     margin-top: 30px;
-
     font-size: 20px;
 
     &:focus {
@@ -99,7 +98,7 @@ button {
     }
   }
 
-  .date-choosing__sub {
+  .date-choosing__submit {
     width: 180px;
     height: 50px;
     margin-top: 50px;
@@ -144,21 +143,21 @@ button {
     display: flex;
     justify-content: space-between;
 
-    .timer__container {
-      .timer__circle {
+    .row__container {
+      .container__circle {
         width: 180px;
         height: 180px;
         border-radius: 50%;
         border: 5px solid #4B0082;
         background: transparent;
 
-        .timer__num {
+        .circle__num {
           height: fit-content;
           color: black;
         }
       }
 
-      .timer__text {
+      .row__txt {
         font-size: 40px;
         margin-top: 10px;
         text-align: center;

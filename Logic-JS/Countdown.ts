@@ -1,11 +1,11 @@
 // Getting All Elements
 // Buttons (Start Choosing Date and Turn Back)
-const dateChoosingBtn: any = document.querySelector('.date_choosing_btn')
-const turnBackBtn: any = document.querySelector('.turn_back_btn')
+const dateChoosingBtn: any = document.querySelector('.date-choosing-btn')
+const turnBackBtn: any = document.querySelector('.turn-back')
 
 // Elements Of Choosing Date Block
 const choosingDateBl: any = document.querySelector('.date-choosing')
-const dateInp: any = document.querySelector('.date-choosing__inp')
+const dateInp: any = document.querySelector('.date-choosing__input')
 
 // Timer Block Elements
 const timerBl: any = document.querySelector('.timer')
@@ -17,25 +17,21 @@ const seconds: any = document.querySelector('.s')
 
 // Event Listeners
 // Window Load Animation
-function animation() {
+window.onload = () => {
     dateChoosingBtn.style.top = document.documentElement.clientHeight / 2 - dateChoosingBtn.clientHeight + 'px'
-    dateChoosingBtn.style.opacity = 1;
+    dateChoosingBtn.style.opacity = 1
 }
 
-window.onload = animation
-
 // Start Date Choosing Button
-function startDateChoosing() {
+dateChoosingBtn.onclick = () => {
     dateChoosingBtn.style.display = 'none'
     choosingDateBl.style.display = 'block'
     choosingDateBl.style.opacity = '1'
     turnBackBtn.style.display = 'block'
 }
 
-dateChoosingBtn.onclick = startDateChoosing
-
 // Start Timer Button
-function startTimer(e) {
+choosingDateBl.onsubmit = (e) => {
     e.preventDefault()
 
     if (dateInp.value === '') alert('Insert the date again')
@@ -64,10 +60,8 @@ function startTimer(e) {
     }, 1000)
 }
 
-choosingDateBl.onsubmit = startTimer
-
 // Turn Back Button
-function turnBack() {
+turnBackBtn.onclick = () => {
     if (choosingDateBl.style.display === 'block') {
         dateChoosingBtn.style.display = 'block'
         choosingDateBl.style.display = 'none'
@@ -77,5 +71,3 @@ function turnBack() {
         timerBl.style.display = 'none'
     }
 }
-
-turnBackBtn.onclick = turnBack
